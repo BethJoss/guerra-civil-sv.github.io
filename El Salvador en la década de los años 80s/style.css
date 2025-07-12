@@ -1,0 +1,179 @@
+body {
+    font-family: 'Georgia', serif; /* Fuente para el cuerpo */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Color de fondo general, la home será blanca */
+    color: #333;
+}
+
+/* Color de fondo suave tipo pastel para todas las páginas excepto la de inicio */
+body.page-body {
+    background-color: #f0f8ff; /* Azul Celeste muy suave */
+}
+
+/* Estilos para la página de inicio (sin color pastel de fondo) */
+.home-main {
+    background-color: #ffffff; /* Fondo blanco para la página de inicio */
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 900px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+header {
+    background-color: #2c3e50; /* Azul oscuro */
+    color: #ffffff;
+    padding: 1rem 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+    font-family: 'Roboto', sans-serif; /* Fuente para títulos */
+    font-size: 2.5em;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #34495e; /* Azul más claro que el header */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en pantallas pequeñas */
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-family: 'Roboto', sans-serif; /* Fuente para enlaces de navegación */
+    font-weight: 700;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    background-color: #1abc9c; /* Verde turquesa */
+    color: #ffffff;
+    border-radius: 5px;
+}
+
+main {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 900px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+.content-section {
+    padding: 20px;
+}
+
+.intro-section {
+    padding: 20px;
+}
+
+h2, h3 {
+    color: #2c3e50; /* Azul oscuro */
+    font-family: 'Roboto', sans-serif; /* Fuente para títulos */
+    border-bottom: 2px solid #1abc9c; /* Línea verde turquesa bajo los títulos */
+    padding-bottom: 10px;
+    margin-top: 30px;
+}
+
+p {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+ul {
+    margin-bottom: 15px;
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 8px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.image-large {
+    width: 80%; /* Imágenes más grandes para el centro de la atención */
+}
+
+.image-medium {
+    width: 60%; /* Imágenes de tamaño medio */
+}
+
+footer {
+    background-color: #2c3e50;
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 30px;
+    font-size: 0.9em;
+}
+
+footer a {
+    color: #1abc9c;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsividad básica */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    .image-large, .image-medium {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    main {
+        padding: 10px;
+        margin: 10px auto;
+    }
+
+    .content-section, .intro-section {
+        padding: 10px;
+    }
+}
